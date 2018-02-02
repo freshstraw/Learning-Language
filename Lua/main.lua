@@ -6,6 +6,7 @@ package.path = string.format("%s?.lua;%s?/init.lua;%s", p, p, m_package_path)
 require("config/config")
 require("tools/tool_util")
 require("utils/util")
+require("grammar/jisuan")
 
 -- 打印搜索路径
 -- print(_L(3, package.path),
@@ -51,4 +52,8 @@ table.insert(default_table, {"nan", "5"})
 print(Inspect(copy_table))
 print(Inspect(deep_copy_table))
 
+-- 5.Time
+print(Inspect(os.date('*t', 0)), "time......")
+print(TimeUtil.FormatTime(1000, "YYYY\\MM\\DD"))
+print(TimeUtil.FormatSeconds(1000, "HMS_AUTO_FIX2"))
 
