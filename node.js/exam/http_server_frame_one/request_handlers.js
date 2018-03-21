@@ -15,7 +15,6 @@
 第一，尽管在Node.js中处理基础的POST请求相对比较简单，但在这过程中还是能学到很多。 
 第二，用Node.js来处理文件上传（multipart POST请求）是比较复杂的，它不在本书的范畴，但，如何使用外部模块却是在本书涉猎内容之内。
 */
-
 function start(response){
   	console.log("Request handler 'start' was called.");
 
